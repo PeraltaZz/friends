@@ -1,0 +1,75 @@
+.personagens-bg {
+  background: linear-gradient(180deg, #a099cc 80%, #edeafa 80%);
+}
+
+.personagem-container {
+  padding: 40px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 5fr 7fr;
+  gap: 40px;
+}
+
+.personagens-bg h1 {
+  grid-column: 1/-1;
+}
+
+.slide-personagem {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-personagem img {
+  max-width: 100%;
+  border-radius: 20px;
+  border: 4px solid transparent;
+}
+
+.slide-personagem img:hover {
+  border: 4px solid #ffde66;
+}
+
+.personagem-conteudo {
+  padding: 40px 60px;
+  background: #edeafa;
+  height: max-content;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.personagem-conteudo h1 {
+  font-size: 32px;
+  font-family: "Gregor Miller's Friends Font";
+  text-align: justify;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+.personagem-conteudo p {
+  font-size: 16px;
+  line-height: 180%;
+  color: #16151a;
+}
+@media (max-width: 1024px) {
+  .personagem-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .slide-personagem img {
+    max-width: 80%;
+  }
+
+  .personagem-conteudo h1 {
+    font-size: 26px;
+    font-family: "Gregor Miller's Friends Font";
+    text-align: justify;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+
+  .personagem-conteudo p {
+    font-size: 16px;
+    line-height: 180%;
+    color: #16151a;
+  }
+}

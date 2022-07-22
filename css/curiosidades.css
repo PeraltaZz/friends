@@ -1,0 +1,70 @@
+.curiosidades {
+  padding: 40px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.curiosidades h1 {
+  grid-column: 1/-1;
+  font-family: "Gregor Miller's Friends Font";
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  color: #08051a;
+}
+
+.curiosidades-lista .pergunta:nth-child(odd),
+.curiosidades-lista .pergunta:nth-child(even) {
+  margin-bottom: 20px;
+  background: #ffde66;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+.curiosidades-lista .pergunta:nth-child(even) {
+  background: #ffffff;
+}
+
+
+.curiosidades-lista .pergunta{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.curiosidades-lista .pergunta dt {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.curiosidades-lista .pergunta dt::before{
+  content: "";
+  width: 15px;
+  height: 5px;
+  background-color: #a099cc;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.curiosidades-lista .pergunta dd {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 180%;
+  
+}
+
+.footer{
+    background-color: #a099cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}

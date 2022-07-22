@@ -1,0 +1,39 @@
+.header {
+  background-color: #a099cc;
+  
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px 0px;
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.header img {
+  max-width: 100%;
+  width: 387px;
+  height: 64px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 80px;
+}
+
+.header-menu a {
+  font-size: 20px;
+  color: #08051a;
+}
+
+
+@media(max-width:1024px){
+  .header-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+}

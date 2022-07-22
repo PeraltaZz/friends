@@ -1,0 +1,38 @@
+.bg-0 {
+  background-color: var(--cor-0);
+}
+
+.bg-1 {
+  background-color: var(--cor-1);
+}
+
+.bg-2 {
+  background-color: var(--cor-2);
+}
+
+.bg-3 {
+  background-color: var(--cor-3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-family: "Gregor Miller's Friends Font";
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  color: #08051a;
+}
+
+.paragrafo-grande{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #16151a;
+}
