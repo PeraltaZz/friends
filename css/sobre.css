@@ -7,9 +7,9 @@
   gap: 60px;
 }
 .sobre-conteudo p + p {
-  margin-top: 40px;
+  margin-top: 20px;
 }
-.sobre-slide{
+.sobre-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,15 +31,32 @@
 }
 
 .sobre-conteudo-2 p + p {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-@media(max-width:1024px){
-  .sobre-container{
+@media (max-width: 1024px) {
+  .sobre-container {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
-  .sobre-slide img{
-    max-width: 80%;
-  justify-self: center;
+}
+
+@media (max-width: 800px) {
+  .sobre-container {
+    padding: 20px;
+    gap: 20px;
+  }
+  .sobre-conteudo-2 {
+    padding: 20px;
+  }
+  .sobre-conteudo p + p {
+    margin-top: 10px;
+  }
+
+  .sobre-conteudo-2 p + p {
+    margin-top: 10px;
+  }
+  .sobre-conteudo-bg {
+    padding: 20px;
   }
 }

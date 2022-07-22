@@ -50,26 +50,32 @@
   line-height: 180%;
   color: #16151a;
 }
+
+
 @media (max-width: 1024px) {
   .personagem-container {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   .slide-personagem img {
-    max-width: 80%;
+    max-width: 50%;
   }
-
+  .personagem-conteudo{
+    padding: 40px 20px;
+  }
   .personagem-conteudo h1 {
-    font-size: 26px;
-    font-family: "Gregor Miller's Friends Font";
-    text-align: justify;
-    letter-spacing: 0.2em;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
 
   .personagem-conteudo p {
     font-size: 16px;
-    line-height: 180%;
-    color: #16151a;
+  }
+}
+@media (max-width: 600px){
+  .slide-personagem img {
+    max-width: 80%;
+  }
+  .personagem-conteudo p {
+    font-size: 12px;
   }
 }

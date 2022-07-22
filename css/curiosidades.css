@@ -6,16 +6,6 @@
   gap: 40px;
 }
 
-.curiosidades h1 {
-  grid-column: 1/-1;
-  font-family: "Gregor Miller's Friends Font";
-  font-size: 42px;
-  line-height: 1.2;
-  letter-spacing: 0.2em;
-  margin-bottom: 20px;
-  color: #08051a;
-}
-
 .curiosidades-lista .pergunta:nth-child(odd),
 .curiosidades-lista .pergunta:nth-child(even) {
   margin-bottom: 20px;
@@ -27,8 +17,7 @@
   background: #ffffff;
 }
 
-
-.curiosidades-lista .pergunta{
+.curiosidades-lista .pergunta {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -36,14 +25,14 @@
 
 .curiosidades-lista .pergunta dt {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.curiosidades-lista .pergunta dt::before{
+.curiosidades-lista .pergunta dt::before {
   content: "";
   width: 15px;
   height: 5px;
@@ -56,15 +45,43 @@
   margin-top: 20px;
   font-size: 18px;
   line-height: 180%;
-  
 }
 
-.footer{
-    background-color: #a099cc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
+.footer {
+  background-color: #a099cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .curiosidades-lista .pergunta dt {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .curiosidades-lista .pergunta dd {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+@media (max-width: 600px) {
+  .curiosidades-lista .pergunta dt {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .curiosidades-lista .pergunta dd {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 160%;
+  }
+}
+@media(max-width:420px){
+  .curiosidades-lista .pergunta dt::before {
+    margin-bottom: 8px;
+  }
 }

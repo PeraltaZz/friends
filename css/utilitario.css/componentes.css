@@ -20,7 +20,7 @@
 }
 
 .titulo {
-  font-family: "Gregor Miller's Friends Font";
+  /* font-family: "Gregor Miller's Friends Font"; */
   font-size: 42px;
   line-height: 1.2;
   letter-spacing: 0.2em;
@@ -28,11 +28,26 @@
   color: #08051a;
 }
 
-.paragrafo-grande{
+.paragrafo-grande {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 180%;
   color: #16151a;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    font-size: 32px;
+  }
+
+  .paragrafo-grande {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .paragrafo-grande {
+    font-size: 12px;
+  }
 }

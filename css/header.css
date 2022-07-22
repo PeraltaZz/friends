@@ -28,12 +28,28 @@
 .header-menu a {
   font-size: 20px;
   color: #08051a;
+  padding: 10px 20px ;
 }
 
 
 @media(max-width:1024px){
   .header-container{
-    flex-direction: column;
+    display: grid;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+@media(max-width:512px){
+  .header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-menu a {
+    font-size: 16px;
+    background-color: #B2ADCF;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
